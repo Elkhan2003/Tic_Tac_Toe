@@ -1,61 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./Elcho/css/style.css" />
+		<link rel="icon" href="./Elcho/img/atom.svg" />
+		<title>Tic Tac Toe</title>
+	</head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./Syndycate/css/style.css">
-  <!-- <link rel="stylesheet" href="./Syndycate/css/phone_style.css" /> -->
-  <!-- <link rel="stylesheet" href="./Syndycate/css/react.css" /> -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
-    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-  <link rel="icon" href="./Syndycate/img/link.png">
-  <title>Lesson_3</title>
-</head>
+	<body>
+		<div class="root">
+			<div class="currentPlayer">
+				<span>Сейчас ходит:<span id="currentPl">x</span></span>
+			</div>
+			<div class="gameResult">
+				<span>Результат игры:</span>
+				<br />
+				<span id="whoWins"></span>
+			</div>
+			<div class="gameHistory">
+				История игры:
 
-<body>
-  <div class="root">
-    <div class="currentPlayer">1
-      <span>Сейчас ходит:<span id="currentP1">X</span></span>
-    </div>
-    <div class="gameResult">
-      <span>Результат игры:</span>
-      <br>
-      <span id="whoWins"></span>
-    </div>
-    <div class="gameHistory">
-      История игры:
-
-      <div id="roundHistory"></div>
-      <br>
-    </div>
-    <div id="area"></div>
-    <div class="stat">
-      <table>
-        <th colspan="2">Статистика </th>
-        <tr>
-          <td>Победа X</td>
-          <td id="sX">
-            <span>0</span>
-          </td>
-        <tr>
-          <td>Победа O</td>
-          <td id="sO">
-            <span>0</span>
-          </td>
-        </tr>
-        <tr>
-          <td>Ничья</td>
-          <td id="sD">
-            <span>0</span>
-          </td>
-        </tr>
-        </tr>
-      </table>
-    </div>
-  </div>
-  <script src="./Syndycate/js/script.js"></script>
-</body>
-
+				<div id="roundHistory"></div>
+				<br />
+			</div>
+			<div id="area"></div>
+			<div class="stat">
+				<table>
+					<th colspan="2">Статистика</th>
+					<tr>
+						<td>Победа X</td>
+						<td id="sX">
+							<span>0</span>
+						</td>
+					</tr>
+					<tr>
+						<td>Победа O</td>
+						<td id="sO">
+							<span>0</span>
+						</td>
+					</tr>
+					<tr>
+						<td>Ничья</td>
+						<td id="sD">
+							<span>0</span>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<script src="./Elcho/js/script.js"></script>
+	</body>
 </html>
